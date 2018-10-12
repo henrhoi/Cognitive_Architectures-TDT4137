@@ -33,15 +33,18 @@ print("Input -> Output")
 for i in range(1, 9):
 	print("{} -> {}".format(i, network.activate([i])[0]))
 
+
 # Activating the network with decimal inputs outside of data-set
 print("\nTesting with decimals:")
 for i in range(40, 60, 2):
 	print("{} -> {}".format(i * 0.1, network.activate([i * 0.1])[0]))
 
+
 # Activating the network with negative numbers outside of data-set
 print("\nTesting with negative numbers:")
 for i in range(1, 9):
 	print("{} -> {}".format(-i, network.activate([-i])[0]))
+
 
 # Activating the network with numbers outside of [1,8]
 print("\nTesting with numbers outside of [1,8]:")
